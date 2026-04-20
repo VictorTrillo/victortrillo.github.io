@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investigador en Psicología & Neurociencia</title>
+  <meta name="description" content="Portal personal de investigación en psicología y neurociencia cognitiva. Publicaciones, proyectos y recursos académicos." />
+  <meta property="og:title" content="Investigador en Psicología & Neurociencia" />
+  <meta property="og:description" content="Portal personal de investigación en psicología y neurociencia cognitiva." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Instrument Serif (display) + Satoshi (body) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%2301696f'/><path d='M10 16 Q16 8 22 16 Q16 24 10 16Z' fill='white' opacity='0.9'/></svg>" />
+
+  <script>
+    // Apply theme before render to avoid flash
+    (function() {
+      const d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', d);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo" aria-label="Inicio">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="currentColor" opacity="0.85"/>
+          <circle cx="16" cy="16" r="2" fill="var(--color-bg)"/>
+        </svg>
+        <span class="logo-text">NeuroCoglab</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="sobre-mi.html" class="nav-link">Sobre mí</a>
+        <a href="articulos.html" class="nav-link">Artículos</a>
+        <a href="repositorio.html" class="nav-link">Repositorio</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-label">Psicología · Neurociencia Cognitiva</p>
+          <h1 class="hero-title">Explorando los límites<br><em>de la mente</em></h1>
+          <p class="hero-desc">Investigador especializado en conciencia, percepción visual e interfaces cerebro-computadora. Mi trabajo busca tender puentes entre la neurociencia básica y sus aplicaciones clínicas y tecnológicas.</p>
+          <div class="hero-actions">
+            <a href="articulos.html" class="btn btn-primary">Ver publicaciones</a>
+            <a href="sobre-mi.html" class="btn btn-ghost">Sobre mí →</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="brain-anim" aria-hidden="true">
+            <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="brainGrad" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="var(--color-primary)" stop-opacity="0.2"/>
+                  <stop offset="100%" stop-color="var(--color-primary)" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <circle cx="150" cy="150" r="130" fill="url(#brainGrad)" class="pulse-ring"/>
+              <circle cx="150" cy="150" r="95" stroke="var(--color-primary)" stroke-width="1" stroke-dasharray="4 6" opacity="0.4" class="rotate-slow"/>
+              <!-- Brain outline stylized -->
+              <path d="M150 60 C110 60 80 85 75 115 C65 115 50 125 50 145 C50 165 65 178 80 178 C80 200 95 220 120 225 C125 235 135 240 150 240 C165 240 175 235 180 225 C205 220 220 200 220 178 C235 178 250 165 250 145 C250 125 235 115 225 115 C220 85 190 60 150 60Z" stroke="var(--color-primary)" stroke-width="1.5" fill="var(--color-primary)" fill-opacity="0.06" class="brain-path"/>
+              <!-- Neural connections -->
+              <line x1="150" y1="100" x2="110" y2="140" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.5"/>
+              <line x1="150" y1="100" x2="190" y2="140" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.5"/>
+              <line x1="110" y1="140" x2="130" y2="175" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.5"/>
+              <line x1="190" y1="140" x2="170" y2="175" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.5"/>
+              <line x1="130" y1="175" x2="170" y2="175" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.5"/>
+              <line x1="150" y1="100" x2="150" y2="175" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.3"/>
+              <!-- Nodes -->
+              <circle cx="150" cy="100" r="4" fill="var(--color-primary)"/>
+              <circle cx="110" cy="140" r="3" fill="var(--color-primary)" opacity="0.7"/>
+              <circle cx="190" cy="140" r="3" fill="var(--color-primary)" opacity="0.7"/>
+              <circle cx="130" cy="175" r="3" fill="var(--color-primary)" opacity="0.7"/>
+              <circle cx="170" cy="175" r="3" fill="var(--color-primary)" opacity="0.7"/>
+              <circle cx="150" cy="175" r="2" fill="var(--color-primary)" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREAS DE INVESTIGACIÓN -->
+    <section class="section research-areas">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Líneas de investigación</span>
+          <h2>Áreas de interés</h2>
+        </header>
+        <div class="areas-grid">
+          <div class="area-card">
+            <div class="area-icon">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.2"/><path d="M12 20 Q20 10 28 20 Q20 30 12 20Z" fill="currentColor" opacity="0.15"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>
+            </div>
+            <h3>Conciencia y percepción</h3>
+            <p>Mecanismos neurales de la conciencia visual, atención y percepción subjetiva. Marcos teóricos como IIT y Global Workspace.</p>
+          </div>
+          <div class="area-card">
+            <div class="area-icon">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="10" width="32" height="22" rx="3" stroke="currentColor" stroke-width="1.2"/><path d="M14 21 L18 17 L22 21 L26 17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Interfaces cerebro-computadora</h3>
+            <p>BCI no invasivas, neurofeedback en tiempo real, y aplicaciones clínicas para rehabilitación cognitiva y motora.</p>
+          </div>
+          <div class="area-card">
+            <div class="area-icon">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 6 L36 30 H4 Z" stroke="currentColor" stroke-width="1.2" fill="currentColor" fill-opacity="0.1"/><circle cx="20" cy="23" r="3" fill="currentColor"/></svg>
+            </div>
+            <h3>Cognición animal comparada</h3>
+            <p>Estudio de la conciencia en animales no humanos, cognición social y evolución de la mente. Perspectiva etológica y neurocientífica.</p>
+          </div>
+          <div class="area-card">
+            <div class="area-icon">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.2"/><path d="M20 8 V20 L28 26" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Neurofeedback</h3>
+            <p>Protocolos de entrenamiento neural para modulación de estados cognitivos, atención y regulación emocional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTÍCULOS RECIENTES -->
+    <section class="section articles-preview">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Publicaciones</span>
+          <h2>Últimos artículos</h2>
+          <a href="articulos.html" class="see-all">Ver todos →</a>
+        </header>
+        <div class="articles-grid">
+          <article class="article-card featured">
+            <div class="article-meta">
+              <span class="article-tag">Conciencia</span>
+              <span class="article-date">2025</span>
+            </div>
+            <h3 class="article-title">Correlatos neurales de la conciencia de acceso: revisión sistemática</h3>
+            <p class="article-excerpt">Una revisión crítica de los principales marcos teóricos para entender la diferencia entre conciencia de acceso y conciencia fenoménica, con énfasis en evidencia empírica reciente.</p>
+            <a href="articulos.html" class="article-link">Leer más →</a>
+          </article>
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">BCI</span>
+              <span class="article-date">2025</span>
+            </div>
+            <h3 class="article-title">Aplicaciones clínicas del neurofeedback en trastornos atencionales</h3>
+            <p class="article-excerpt">Revisión de protocolos BCI para TDAH y evaluación de su eficacia en ensayos controlados.</p>
+            <a href="articulos.html" class="article-link">Leer más →</a>
+          </article>
+          <article class="article-card">
+            <div class="article-meta">
+              <span class="article-tag">Percepción</span>
+              <span class="article-date">2024</span>
+            </div>
+            <h3 class="article-title">Supresión continua flash y sus implicaciones para el estudio de la percepción inconsciente</h3>
+            <p class="article-excerpt">Análisis metodológico de la técnica CFS y su aplicación en el estudio del procesamiento subliminal.</p>
+            <a href="articulos.html" class="article-link">Leer más →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPOSITORIO PREVIEW -->
+    <section class="section repo-preview">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Código & datos</span>
+          <h2>Repositorio</h2>
+          <a href="repositorio.html" class="see-all">Ver todo →</a>
+        </header>
+        <div class="repo-grid">
+          <a href="repositorio.html" class="repo-card">
+            <div class="repo-card-top">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span class="repo-lang python">Python</span>
+            </div>
+            <h3>eeg-analysis-toolkit</h3>
+            <p>Herramientas para análisis de señales EEG, extracción de características espectrales y clasificación de estados cognitivos.</p>
+            <div class="repo-stats">
+              <span>⭐ análisis EEG</span>
+              <span>· Python</span>
+            </div>
+          </a>
+          <a href="repositorio.html" class="repo-card">
+            <div class="repo-card-top">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span class="repo-lang r">R</span>
+            </div>
+            <h3>consciousness-scales-meta</h3>
+            <p>Metaanálisis de escalas de medición de la conciencia. Scripts R para reproducibilidad y análisis estadístico bayesiano.</p>
+            <div class="repo-stats">
+              <span>⭐ metaanálisis</span>
+              <span>· R</span>
+            </div>
+          </a>
+          <a href="repositorio.html" class="repo-card">
+            <div class="repo-card-top">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span class="repo-lang matlab">MATLAB</span>
+            </div>
+            <h3>bci-neurofeedback-protocol</h3>
+            <p>Implementación de un protocolo BCI de neurofeedback en tiempo real basado en potenciales P300.</p>
+            <div class="repo-stats">
+              <span>⭐ BCI · P300</span>
+              <span>· MATLAB</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="currentColor" opacity="0.85"/>
+          <circle cx="16" cy="16" r="2" fill="var(--color-bg)"/>
+        </svg>
+        <span>NeuroCoglab</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="repositorio.html">Repositorio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 · Hecho con curiosidad científica</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>

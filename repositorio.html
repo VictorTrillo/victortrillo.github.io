@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repositorio — NeuroCoglab</title>
+  <meta name="description" content="Proyectos de código abierto en análisis EEG, BCI y neurociencia computacional." />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%2301696f'/><path d='M10 16 Q16 8 22 16 Q16 24 10 16Z' fill='white' opacity='0.9'/></svg>" />
+  <script>(function(){const d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',d);})();</script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo" aria-label="Inicio">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="currentColor" opacity="0.85"/><circle cx="16" cy="16" r="2" fill="var(--color-bg)"/></svg>
+        <span class="logo-text">NeuroCoglab</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="sobre-mi.html" class="nav-link">Sobre mí</a>
+        <a href="articulos.html" class="nav-link">Artículos</a>
+        <a href="repositorio.html" class="nav-link active">Repositorio</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Ciencia abierta</span>
+        <h1>Repositorio</h1>
+        <p class="page-hero-desc">Código, datos y recursos de libre acceso para la comunidad científica. Todo disponible en GitHub.</p>
+        <a href="https://github.com/tu-usuario" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: var(--space-6)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          Ver perfil en GitHub
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="repo-full-grid">
+
+          <div class="repo-card-full">
+            <div class="repo-card-full-header">
+              <div class="repo-card-top">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <h2>eeg-analysis-toolkit</h2>
+              </div>
+              <span class="repo-lang python">Python</span>
+            </div>
+            <p>Conjunto de herramientas para preprocesamiento y análisis de señales EEG. Incluye filtros digitales, segmentación de épocas, extracción de características espectrales (bandas delta, theta, alpha, beta, gamma) y clasificación de estados cognitivos mediante machine learning.</p>
+            <div class="repo-topics">
+              <span class="tag small">EEG</span>
+              <span class="tag small">MNE-Python</span>
+              <span class="tag small">Machine Learning</span>
+              <span class="tag small">Scikit-learn</span>
+              <span class="tag small">Neurociencia computacional</span>
+            </div>
+            <div class="repo-actions">
+              <a href="https://github.com/tu-usuario/eeg-analysis-toolkit" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver en GitHub →</a>
+            </div>
+          </div>
+
+          <div class="repo-card-full">
+            <div class="repo-card-full-header">
+              <div class="repo-card-top">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <h2>consciousness-scales-meta</h2>
+              </div>
+              <span class="repo-lang r">R</span>
+            </div>
+            <p>Scripts y datos para la reproducción completa del metaanálisis sobre escalas de medición de la conciencia. Incluye análisis bayesiano con brms, forest plots y evaluación de sesgo de publicación. Todos los datos son accesibles y el análisis es 100% reproducible.</p>
+            <div class="repo-topics">
+              <span class="tag small">Metaanálisis</span>
+              <span class="tag small">R</span>
+              <span class="tag small">Bayesian stats</span>
+              <span class="tag small">brms</span>
+              <span class="tag small">Ciencia abierta</span>
+            </div>
+            <div class="repo-actions">
+              <a href="https://github.com/tu-usuario/consciousness-scales-meta" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver en GitHub →</a>
+              <a href="#" class="btn btn-outline btn-sm">OSF →</a>
+            </div>
+          </div>
+
+          <div class="repo-card-full">
+            <div class="repo-card-full-header">
+              <div class="repo-card-top">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <h2>bci-neurofeedback-protocol</h2>
+              </div>
+              <span class="repo-lang matlab">MATLAB</span>
+            </div>
+            <p>Implementación de un sistema BCI de neurofeedback en tiempo real basado en potenciales evocados P300. Incluye interfaz gráfica, captura de señal EEG, clasificador LDA en tiempo real y módulo de feedback visual. Compatible con amplificadores OpenBCI y g.USBamp.</p>
+            <div class="repo-topics">
+              <span class="tag small">BCI</span>
+              <span class="tag small">P300</span>
+              <span class="tag small">MATLAB</span>
+              <span class="tag small">Real-time EEG</span>
+              <span class="tag small">OpenBCI</span>
+            </div>
+            <div class="repo-actions">
+              <a href="https://github.com/tu-usuario/bci-neurofeedback-protocol" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver en GitHub →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="currentColor" opacity="0.85"/><circle cx="16" cy="16" r="2" fill="var(--color-bg)"/></svg>
+        <span>NeuroCoglab</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="repositorio.html">Repositorio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 · Hecho con curiosidad científica</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>

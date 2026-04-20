@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí — NeuroCoglab</title>
+  <meta name="description" content="Investigador en psicología y neurociencia cognitiva. Conciencia, BCI, percepción visual y cognición animal." />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%2301696f'/><path d='M10 16 Q16 8 22 16 Q16 24 10 16Z' fill='white' opacity='0.9'/></svg>" />
+  <script>(function(){const d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',d);})();</script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo" aria-label="Inicio">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="currentColor" opacity="0.85"/><circle cx="16" cy="16" r="2" fill="var(--color-bg)"/></svg>
+        <span class="logo-text">NeuroCoglab</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="sobre-mi.html" class="nav-link active">Sobre mí</a>
+        <a href="articulos.html" class="nav-link">Artículos</a>
+        <a href="repositorio.html" class="nav-link">Repositorio</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Investigador</span>
+        <h1>Sobre mí</h1>
+      </div>
+    </section>
+
+    <section class="section about-layout">
+      <div class="container about-grid">
+
+        <!-- Foto y datos -->
+        <aside class="about-sidebar">
+          <div class="profile-photo-wrapper">
+            <!-- Si tienes foto, reemplaza este bloque por: <img src="assets/foto.jpg" alt="Tu nombre" class="profile-photo"> -->
+            <div class="profile-photo-placeholder" id="photoPlaceholder">
+              <label for="photoUpload" class="photo-upload-label" title="Haz clic para añadir tu foto">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                <span>Tu foto aquí</span>
+                <span class="photo-hint">Reemplaza el placeholder<br>en el HTML con tu imagen</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="profile-info">
+            <h2 class="profile-name">Tu nombre</h2>
+            <p class="profile-role">Investigador en Psicología & Neurociencia</p>
+            <p class="profile-affiliation">Universidad · Departamento de Psicología</p>
+          </div>
+
+          <div class="profile-links">
+            <a href="mailto:tu@email.com" class="profile-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              tu@email.com
+            </a>
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener" class="profile-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener" class="profile-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.956-1.494 3.956-3.722 0-2.319-1.681-3.722-3.906-3.722h-2.347z"/></svg>
+              ORCID
+            </a>
+            <a href="https://scholar.google.com" target="_blank" rel="noopener" class="profile-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+              Google Scholar
+            </a>
+          </div>
+
+          <div class="cv-download">
+            <a href="assets/cv.pdf" class="btn btn-outline" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Descargar CV
+            </a>
+          </div>
+        </aside>
+
+        <!-- Texto bio -->
+        <div class="about-content">
+          <div class="about-block">
+            <h2>Presentación</h2>
+            <p>Soy investigador en psicología y neurociencia cognitiva con interés en los fundamentos neurobiológicos de la conciencia, la percepción visual y las tecnologías de interfaz cerebro-computadora. Mi trabajo combina revisión teórica con análisis de datos experimentales y metodologías computacionales.</p>
+            <p>Creo firmemente en la ciencia abierta y reproducible. Todos mis análisis y datos están disponibles públicamente en mi repositorio de GitHub.</p>
+          </div>
+
+          <div class="about-block">
+            <h2>Formación</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-year">2023–actualidad</span>
+                <div class="timeline-content">
+                  <strong>Máster / Posgrado en Neurociencia Cognitiva</strong>
+                  <span class="timeline-place">Universidad · España</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-year">2019–2023</span>
+                <div class="timeline-content">
+                  <strong>Grado en Psicología</strong>
+                  <span class="timeline-place">Universidad · España</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-block">
+            <h2>Intereses de investigación</h2>
+            <div class="interests-tags">
+              <span class="tag">Conciencia</span>
+              <span class="tag">Percepción visual</span>
+              <span class="tag">BCI</span>
+              <span class="tag">Neurofeedback</span>
+              <span class="tag">EEG</span>
+              <span class="tag">Teoría de la información integrada (IIT)</span>
+              <span class="tag">Global Workspace Theory</span>
+              <span class="tag">Cognición animal</span>
+              <span class="tag">Ciencia abierta</span>
+              <span class="tag">Estadística bayesiana</span>
+            </div>
+          </div>
+
+          <div class="about-block">
+            <h2>Habilidades y herramientas</h2>
+            <div class="skills-grid">
+              <div class="skill-group">
+                <h3>Análisis</h3>
+                <ul>
+                  <li>Python (MNE, Scipy, Scikit-learn)</li>
+                  <li>R (Bayesian stats, ggplot2)</li>
+                  <li>MATLAB (EEGLAB, FIELDTRIP)</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3>Metodología</h3>
+                <ul>
+                  <li>Registro EEG</li>
+                  <li>Psicofísica</li>
+                  <li>Metaanálisis</li>
+                  <li>Revisión sistemática</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <h3>Escritura académica</h3>
+                <ul>
+                  <li>APA 7ª edición</li>
+                  <li>LaTeX</li>
+                  <li>Zotero</li>
+                  <li>Open Science Framework</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="currentColor" opacity="0.85"/><circle cx="16" cy="16" r="2" fill="var(--color-bg)"/></svg>
+        <span>NeuroCoglab</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="articulos.html">Artículos</a>
+        <a href="repositorio.html">Repositorio</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 · Hecho con curiosidad científica</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  var scrollRaf=0;
+  function emitScroll(){
+    scrollRaf=0;
+    var x=window.scrollX||window.pageXOffset||0;
+    var y=window.scrollY||window.pageYOffset||0;
+    window.parent.postMessage({type:'INLINE_EDIT_SCROLL',scrollX:x,scrollY:y},'*');
+  }
+  window.addEventListener('scroll',function(){
+    if(scrollRaf)return;
+    scrollRaf=requestAnimationFrame(emitScroll);
+  },{passive:true,capture:true});
+  emitScroll();
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
